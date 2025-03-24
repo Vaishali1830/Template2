@@ -1,0 +1,183 @@
+@import "tailwindcss";
+
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* LIGHT THEME */
+
+  /* Background colors  */
+  --primary-light: #65a30d;
+  --background-light: #ffffff;
+  --secondary-light: #e5e7eb;
+  --surface-light: #f8fafc;
+  --surface-hover-light: #f1f5f9;
+
+  /* Text colors */
+  --text-primary-light: #1e293b;
+  --text-secondary-light: #475569;
+  --anchor-text-light: #f8fafc;
+  --anchor-hover-light: #1956c7;
+  --text-white-light : #f8fafc;
+
+  /* border colors */
+  --border-light: #e5e7eb;
+
+  /* button colors */
+  --button-primary-light: #65a30d;
+  --button-primary-hover-light: #55880d;
+  --button-secondary-light: #f8fafcbf;
+  --button-secondary-hover-light: #f8fafc9e;
+
+  /* DARK THEME */
+
+  /* Background colors  */
+  --primary-dark: #65a30d;
+  --background-dark: #0f172a;
+  --secondary-dark: #94a3b8;
+  --surface-dark: #1e293b;
+  --surface-hover-dark: #334155;
+
+  /* Text colors */
+  --text-primary-dark: #f8fafc;
+  --text-secondary-dark: #cbd5e1;
+  --anchor-text-dark: #f8fafc;
+  --anchor-hover-dark: #1956c7;
+  --text-white-dark : #f8fafc;
+
+  /* border colors */
+  --border-dark: #334155;
+
+  /* button colors */
+  --button-primary-dark: #65a30d;
+  --button-primary-hover-dark: #55880d;
+  --button-secondary-dark: #f8fafcbf;
+  --button-secondary-hover-dark: #f8fafc9e;
+
+  /* Default theme - light mode */
+  --primary: var(--primary-light);
+  --background: var(--background-light);
+  --secondary: var(--secondary-light);
+  --text-primary: var(--text-primary-light);
+  --text-secondary: var(--text-secondary-light);
+  --border: var(--border-light);
+  --anchor-text: var(--anchor-text-light);
+  --anchor-hover: var(--anchor-hover-light);
+  --surface: var(--surface-light);
+  --surface-hover: var(--surface-hover-light);
+  --button-primary: var(--button-primary-light);
+  --button-primary-hover: var(--button-primary-hover-light);
+  --button-secondary: var(--button-secondary-light);
+  --button-secondary-hover: var(--button-secondary-hover-light);
+  --white-text : var(--text-white-light);
+}
+
+/* dark mode colors */
+[data-theme="dark"] {
+  --primary: var(--primary-dark);
+  --secondary: var(--secondary-dark);
+  --background: var(--background-dark);
+  --text-primary: var(--text-primary-dark);
+  --text-secondary: var(--text-secondary-dark);
+  --border: var(--border-dark);
+  --anchor-text: var(--anchor-text-dark);
+  --anchor-hover: var(--anchor-hover-dark);
+  --surface: var(--surface-dark);
+  --surface-hover: var(--surface-hover-dark);
+  --button-primary: var(--button-primary-dark);
+  --button-primary-hover: var(--button-primary-hover-dark);
+  --button-secondary: var(--button-secondary-dark);
+  --button-secondary-hover: var(--button-secondary-hover-dark);
+  --white-text : var(--text-white-dark);
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  background-color: var(--background);
+  color: var(--text-primary);
+}
+
+.bgColor {
+  background-color: var(--background);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.border-color {
+  border-color: var(--border);
+}
+
+.anchor-text {
+  color: var(--anchor-text);
+  transition: color 0.3s ease-in-out;
+}
+
+.anchor-text:hover {
+  color: var(--anchor-hover);
+}
+
+.bg-surface {
+  background-color: var(--surface);
+}
+
+.btn-primary {
+  background-color: var(--button-primary);
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+  background-color: var(--button-primary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary {
+  background-color: var(--button-secondary);
+  color: gray;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary:hover {
+  background-color: var(--button-secondary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.white-text{
+  color : var(--white-text)
+}
