@@ -74,7 +74,6 @@ export const Header = () => {
           <NavItems title="About" route="/about"></NavItems>
           <NavItems title="Academics" route="/academics"></NavItems>
           <NavItems title="Campus Life" route="/campus-life"></NavItems>
-          <button className="btn-primary">Apply</button>
         </div>
 
         <div className="relative md:hidden flex items-center justify-center gap-4 m-5">
@@ -89,7 +88,6 @@ export const Header = () => {
               <NavItems title="Academics" route="/academics" />
               <NavItems title="Campus Life" route="/campus-life" />
               <NavItems title="Notice" route="/notice" />
-              <NavItems title="Apply" route="/apply" />
             </div>
           )}
         </div>
