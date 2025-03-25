@@ -74,6 +74,7 @@ export const Header = () => {
           <NavItems title="About" route="/about"></NavItems>
           <NavItems title="Academics" route="/academics"></NavItems>
           <NavItems title="Campus Life" route="/campus-life"></NavItems>
+          <Link to='contact-us' className="btn-primary">CONTACT</Link>
         </div>
 
         <div className="relative md:hidden flex items-center justify-center gap-4 m-5">
